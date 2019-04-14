@@ -3,8 +3,8 @@ Description=HelixAlpha DNS Seeder
 After=network.target
 
 [Service]
-WorkingDirectory=/usr/src/seeder
-ExecStart=/usr/src/seeder/dnsseed -h dnsseed.helixalpha.com -n vps.helixalpha.com -m ryan@helixalpha.com -p 5353
+WorkingDirectory=/usr/local/src/seeder
+ExecStart=/usr/local/src/seeder/dnsseed -h dnsseed.helixalpha.com -n vps.helixalpha.com -m ryan@helixalpha.com -p 5353
 Restart=on-failure
 RestartSec=10
 User=root
