@@ -406,7 +406,7 @@ static const string *seeds = mainnet_seeds;
 
 extern "C" void* ThreadSeeder(void*) {
   if (!fTestNet){
-    db.Add(CService("kjy2eqzk4zwi5zd3.onion", 9222), true);
+    db.Add(CService("node.helixalpha.com", 8332), true);
   }
   do {
     for (int i=0; seeds[i] != ""; i++) {
